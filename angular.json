@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -54,6 +57,7 @@
               "outputHashing": "all"
             },
             "development": {
+              "aot": true,
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
@@ -71,7 +75,8 @@
               "browserTarget": "First-Project:build:production"
             },
             "development": {
-              "browserTarget": "First-Project:build:development"
+              "browserTarget": "First-Project:build:development",
+              "port": 5001
             }
           },
           "defaultConfiguration": "development"
